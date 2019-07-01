@@ -1,0 +1,45 @@
+body{
+    font-family: 'Vidaloka', serif;
+}
+.height{
+    min-height: 100vh;
+    background: url(../img/header-2.jpg)center/cover fixed;
+}
+.title-underline{
+    width: 200px;
+    height: 5px;
+    margin: 0 auto;
+    /* background: blue!important; */
+}
+.height-80{
+    min-height: 100vh;
+}
+
+.about-picture{
+    background: url(../img/image01.jpeg)center/cover no-repeat fixed;
+    /* background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+#logo{
+    font-size: 35px;
+}
+
+ #navbar{
+    background-color:whitesmoke;
+    font-size: 40px;
+}
+
+#navbarLinks{
+    font-size: 25px;
+}
+
+#goal{
+    font-size: 20px;
+}
+
+/* footer */
+.float-left{
+font-size: 20px;
+}
