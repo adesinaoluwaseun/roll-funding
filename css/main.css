@@ -39,6 +39,14 @@ body{
     font-size: 20px;
 }
 
+/* service */
+#carouselExampleIndicators{
+    min-height: 50px;
+}
+
+
+
+
 /* footer */
 .float-left{
 font-size: 20px;
