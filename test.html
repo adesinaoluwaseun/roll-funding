@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- font awesome -->
+    <script src="./js/all.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+    <!-- main-css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <h2>hello world</h2>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- font awesome -->
+        <script src="./js/all.js"></script>
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+        <!-- main-css -->
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav class="navbar py-3 navbar-light navbar-expand-sm" id="navbar">
+            <!-- logo -->
+            <a href="#" class="navbar-brand text-uppercase font-italic" id="logo">ROLL FUNDING</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="#header" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="#payment" class="nav-link">Payment</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="justify-content-end">
+                <!--Modal: Login / Register Form-->
+                <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog cascading-modal" role="document">
+                        <!--Content-->
+                        <div class="modal-content" id="modal-top">
+
+                            <!--Modal cascading tabs-->
+                            <div class="modal-c-tabs" id="modal-tab">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3 justify-content-center"
+                                    role="tablist" id="ul-nav">
+                                    <li class="nav-item" id="nav-log">
+                                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
+                                            <i class="fas fa-user mr-1"></i>
+                                            Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
+                                                class="fas fa-user-plus mr-1"></i>
+                                            Register</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panels -->
+                                <div class="tab-content">
+                                    <!--Panel 7-->
+                                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                                        <!--Body-->
+                                        <div class="modal-body mb-1">
+                                            <div class="md-form form-sm mb-5" id="my-email">
+                                                <i class="fas fa-envelope text-primary"></i>
+                                                <input type="email" id="modalLRInput10"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your
+                                                    email</label>
+                                            </div>
+
+                                            <div class="md-form form-sm mb-4" id="my-password">
+                                                <i class="fas fa-lock text-primary"></i>
+                                                <input type="password" id="modalLRInput11"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right" for="modalLRInput11">Your
+                                                    password</label>
+                                            </div>
+                                            <div class="text-center mt-2" id="my-sgn">
+                                                <button class="btn btn-info">Log in <i
+                                                        class="fas fa-sign-in ml-1"></i></button>
+                                            </div>
+                                            <div class="row my-3 d-flex justify-content-center">
+                                                <!--Facebook-->
+                                                <button type="button"
+                                                    class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                                        class="fab fa-facebook-f text-center"></i></button>
+                                                <!--Twitter-->
+                                                <button type="button"
+                                                    class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                                        class="fab fa-twitter"></i></button>
+                                                <!--Google +-->
+                                                <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i
+                                                        class="fab fa-google-plus-g"></i></button>
+                                            </div>
+                                        </div>
+                                        <!--Footer-->
+                                        <div class="modal-footer">
+                                            <div class="options text-center text-md-right mt-1">
+                                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger waves-effect ml-auto"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                    <!--/.Panel 7-->
+
+                                    <!--Panel 8-->
+                                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                                        <!--Body-->
+                                        <div class="modal-body">
+                                            <div class="md-form form-sm mb-5" id="my-email">
+                                                <i class="fas fa-envelope text-primary"></i>
+                                                <input type="email" id="modalLRInput12"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your
+                                                    email</label>
+                                            </div>
+
+                                            <div class="md-form form-sm mb-5" id="my-password">
+                                                <i class="fas fa-lock text-primary"></i>
+                                                <input type="password" id="modalLRInput13"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                                                    password</label>
+                                            </div>
+
+                                            <div class="md-form form-sm mb-4" id="my-password">
+                                                <i class="fas fa-lock text-primary"></i>
+                                                <input type="password" id="modalLRInput14"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right"
+                                                    for="modalLRInput14">Repeat
+                                                    password</label>
+                                            </div>
+
+                                            <div class="text-center form-sm mt-2">
+                                                <button class="btn btn-info">Sign up <i
+                                                        class="fas fa-sign-in ml-1"></i></button>
+                                            </div>
+
+                                        </div>
+                                        <!--Footer-->
+                                        <div class="modal-footer">
+                                            <div class="options text-right">
+                                                <p class="pt-1">Already have an account? <a href="#"
+                                                        class="blue-text">Log
+                                                        In</a></p>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-danger waves-effect ml-auto"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    <!--/.Panel 8-->
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!--Modal: Login / Register Form-->
+
+                <div class="text-center">
+                    <a href="" class="btn btn-primary btn-rounded my-3" data-toggle="modal"
+                        data-target="#modalLRForm">LogIn/Register</a>
+                </div>
+                <!-- end of sign in section -->
+            </div>
+        </nav>
+        <!-- end of navbar -->
+        <!-- header -->
+        <header id="header" class="bg-white">
+            <div class="container-fluid">
+                <!-- first row -->
+                <div class="row height align-items-center">
+                    <div class="col">
+                        <h1 class="text-secondary text-uppercase font-weight-bold font-italic">
+                            <strong>“Do not save what is left after spending,instead spend what is left after
+                                saving.”</strong>
+                            <small class="text-light"></small>
+                        </h1>
+                        <p class="text-dark lead py-6">Why not join us today to save and take loan</p>
+                    </div>
+                </div>
+                <!-- end of first row -->
+            </div>
+        </header>
+        <!-- end of header  -->
+        <!-- contact section -->
+
+        <!-- end of contact section -->
+
+
+
+
+        <section id="skills" class="py-5 bg-white">
+            <div class="container">
+                <!-- title -->
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="display-6 text-uppercase text-dark mb-8">
+                            <strong>Why people choose us</strong>
+                        </h1>
+                        <div class="title-underline bg-danger"></div>
+                        <p class="mt-2 text-capitalize text-dark" id="goal">Our goal is to make your life easier,
+                            providing
+                            simple,
+                            flexible loans that are tailored for you.</p>
+                    </div>
+                </div>
+                <!-- end of title -->
+                <div class="row">
+                    <!-- single col -->
+                    <div class="col-md-6 col-lg-3 text-center my-4">
+                        <i class="fas fa-handshake fa-4x text-primary"></i>
+                        <h3 class="text-capitalize mt-5">Fast, simple and convenient</h3>
+                    </div>
+                    <!-- end of single col -->
+                    <!-- single col -->
+                    <div class="col-md-6 col-lg-3 text-center my-4">
+                        <i class="fas fa-handshake fa-4x text-primary"></i>
+                        <h3 class="text-capitalize mt-5">No collateral or guarantor needed</h3>
+                    </div>
+                    <!-- end of single col -->
+
+                    <!-- single col -->
+                    <div class="col-md-6 col-lg-3 text-center my-4">
+                        <i class="fas fa-handshake fa-4x text-primary"></i>
+                        <h3 class="text-capitalize mt-5">Easy payments method</h3>
+                    </div>
+                    <!-- end of single col -->
+
+                    <!-- single col -->
+                    <div class="col-md-6 col-lg-3 text-center my-4">
+                        <i class="fas fa-handshake fa-4x text-primary"></i>
+                        <h3 class="text-capitalize mt-5">no charges rates </h3>
+                    </div>
+                    <!-- end of single col -->
+                </div>
+            </div>
+        </section>
+
+        <div class="dropdown">
+            <a href="favorites.html" class="btn btn-danger">
+                My Favorites
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer bg-danger">
+            <div class="container">
+                <div class="row">
+                    <div class="float-left my-4 text-primary"> &copy;Made with love </div>
+                    <div class="col text-right">
+                        <a href="#" class="btn">
+                            <i class="fab fa-facebook fa-2x text-primary"></i>
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-twitter fa-2x text-primary m-2"></i>
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-instagram fa-2x text-primary m-2"></i>
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-google-plus fa-2x text-primary m-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+        <!-- footer section -->
+        <footer id=" footer" class="bg-dark py-">
+            <div class="container">
+
+                <div class="row">
+                    <div class="float-left my-4 text-primary"> &copy;Made with love </div>
+                    <div class="col text-right">
+                        <a href="#" class="btn">
+                            <i class="fab fa-facebook fa-2x text-primary"></i>
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-twitter fa-2x text-primary m-2"></i>
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-instagram fa-2x text-primary m-2"></i>
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-google-plus fa-2x text-primary m-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jquery -->
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <!-- bootstrap -->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
+
+
+    <!-- jquery -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

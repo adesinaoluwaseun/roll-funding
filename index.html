@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+    <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- font awesome -->
@@ -13,114 +15,155 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
     <!-- main-css -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
 </head>
-<body>
-    <!-- navbar -->
-    <nav class="navbar py-3 navbar-light navbar-expand-sm" id="navbar">
-        <!-- logo -->
-        <a href="#" class="navbar-brand text-uppercase font-italic" id="logo">ROLL FUNDING</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
-            <ul class="navbar-nav">
-                <li class="nav-item active"><a href="#header" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#service" class="nav-link">Our Service</a></li>
-                <li class="nav-item"><a href="#payment" class="nav-link">Payment</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
 
-            </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="index.html">
+                <h1 class="sitename">ROLL<span>FUNDING</span> </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ingredient.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="filter-alcohol.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="refrence.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
-    <!-- end of navbar -->
-    <!-- header -->
-    <header id="header" class="bg-white">
+
+    <section id="contact" class="mt-5">
         <div class="container-fluid">
-            <!-- first row -->
-            <div class="row height align-items-center">
-                <div class="col">
-                    <h1 class="text-secondary text-uppercase font-weight-bold font-italic">
+            <div class="row ">
+                <div class="col-6 justify-content-left">
+                    <h1 class="text-white text-uppercase font-weight-bold font-italic pt-5">
                         <strong>“Do not save what is left after spending,instead spend what is left after
                             saving.”</strong>
                         <small class="text-light"></small>
                     </h1>
-                    <p class="text-dark lead py-2">Why not join us today to save and take loan</p>
-                    <a href="#" class="btn btn-outline-primary btn-lg m-2 text-capitalize">Register</a>
-                    <a href="#" class="btn btn-outline-success btn-lg m-2 text-capitalize">login</a>
                 </div>
-            </div>
-            <!-- end of first row -->
-        </div>
-    </header>
-    <!-- end of header  -->
-    <section id="skills" class="py-5 bg-white">
-        <div class="container">
-            <!-- title -->
-            <div class="row">
-                <div class="col text-center">
-                    <h1 class="display-6 text-uppercase text-dark mb-8">
-                        <strong>Why people choose us</strong>
-                    </h1>
-                    <div class="title-underline bg-danger"></div>
-                    <p class="mt-2 text-capitalize text-dark" id="goal">Our goal is to make your life easier,
-                        providing
-                        simple,
-                        flexible loans that are tailored for you.</p>
-                </div>
-            </div>
-            <!-- end of title -->
-            <div class="row">
-                <!-- single col -->
-                <div class="col-md-6 col-lg-3 text-center my-4">
-                    <i class="fas fa-handshake fa-4x text-primary"></i>
-                    <h3 class="text-capitalize mt-5">Fast, simple and convenient</h3>
-                </div>
-                <!-- end of single col -->
-                <!-- single col -->
-                <div class="col-md-6 col-lg-3 text-center my-4">
-                    <i class="fas fa-handshake fa-4x text-primary"></i>
-                    <h3 class="text-capitalize mt-5">No collateral or guarantor needed</h3>
-                </div>
-                <!-- end of single col -->
+                <div>
+                    <div id="container-demo">
+                        <div class="col-6 justify-content-end">
+                            <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                            <a class="hiddenanchor" id="toregister"></a>
+                            <a class="hiddenanchor" id="tologin"></a>
+                            <div id="wrapper">
+                                <div id="login" class="animate form">
+                                    <form action="mysuperscript.php" autocomplete="on">
+                                        <h1>Log in</h1>
+                                        <p>
+                                            <label for="username" class="uname" data-icon="u"> Your email or
+                                                username
+                                            </label>
+                                            <input id="username" name="username" required="required" type="text"
+                                                placeholder="myusername or mymail@mail.com" />
+                                        </p>
+                                        <p>
+                                            <label for="password" class="youpasswd" data-icon="p"> Your
+                                                password
+                                            </label>
+                                            <input id="password" name="password" required="required" type="password"
+                                                placeholder="eg. X8df!90EO" />
+                                        </p>
+                                        <p class="keeplogin">
+                                            <input type="checkbox" name="loginkeeping" id="loginkeeping"
+                                                value="loginkeeping" />
+                                            <label for="loginkeeping">Keep me logged in</label>
+                                        </p>
+                                        <p class="login button">
+                                            <input type="submit" value="Login" />
+                                        </p>
+                                        <p class="change_link">
+                                            Not a member yet ?
+                                            <a href="#toregister" class="to_register">Join us</a>
+                                        </p>
+                                    </form>
+                                </div>
 
-                <!-- single col -->
-                <div class="col-md-6 col-lg-3 text-center my-4">
-                    <i class="fas fa-handshake fa-4x text-primary"></i>
-                    <h3 class="text-capitalize mt-5">Easy payments method</h3>
-                </div>
-                <!-- end of single col -->
+                                <div id="register" class="animate form">
+                                    <form action="mysuperscript.php" autocomplete="on">
+                                        <h1> Sign up </h1>
+                                        <p>
+                                            <label for="usernamesignup" class="uname" data-icon="u">Your
+                                                username</label>
+                                            <input id="usernamesignup" name="usernamesignup" required="required"
+                                                type="text" placeholder="mysuperusername690" />
+                                        </p>
+                                        <p>
+                                            <label for="emailsignup" class="youmail" data-icon="e"> Your
+                                                email</label>
+                                            <input id="emailsignup" name="emailsignup" required="required" type="email"
+                                                placeholder="mysupermail@mail.com" />
+                                        </p>
+                                        <p>
+                                            <label for="passwordsignup" class="youpasswd" data-icon="p">Your
+                                                password
+                                            </label>
+                                            <input id="passwordsignup" name="passwordsignup" required="required"
+                                                type="password" placeholder="eg. X8df!90EO" />
+                                        </p>
+                                        <p>
+                                            <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please
+                                                confirm your password </label>
+                                            <input id="passwordsignup_confirm" name="passwordsignup_confirm"
+                                                required="required" type="password" placeholder="eg. X8df!90EO" />
+                                        </p>
+                                        <p class="signin button">
+                                            <input type="submit" value="Sign up" />
+                                        </p>
+                                        <p class="change_link">
+                                            Already a member ?
+                                            <a href="#tologin" class="to_register"> Go and log in </a>
+                                        </p>
+                                    </form>
+                                </div>
 
-                <!-- single col -->
-                <div class="col-md-6 col-lg-3 text-center my-4">
-                    <i class="fas fa-handshake fa-4x text-primary"></i>
-                    <h3 class="text-capitalize mt-5">no charges rates </h3>
-                </div>
-                <!-- end of single col -->
-            </div>
-        </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+    </div>
+    </div>
     </section>
     <!-- footer section -->
-    <footer id="footer" class="bg-dark py-">
-        <div class="container">
-
-            <div class="row">
-                <div class="float-left my-4 text-primary"> &copy;Made with love </div>
-                <div class="col text-right">
-                    <a href="#" class="btn">
-                        <i class="fab fa-facebook fa-2x text-primary"></i>
-                    </a>
-                    <a href="#" class="btn">
-                        <i class="fab fa-twitter fa-2x text-primary m-2"></i>
-                    </a>
-                    <a href="#" class="btn">
-                        <i class="fab fa-instagram fa-2x text-primary m-2"></i>
-                    </a>
-                    <a href="#" class="btn">
-                        <i class="fab fa-google-plus fa-2x text-primary m-2"></i>
-                    </a>
-                </div>
-            </div>
+    <footer class="footer">
+        <div class="float-left text-primary"> &copy;Made with love</div>
+        <div class="float-right">
+            <a href="#" class="btn">
+                <i class="fab fa-facebook fa-2x text-primary"></i>
+            </a>
+            <a href="#" class="btn">
+                <i class="fab fa-twitter fa-2x text-primary m-2"></i>
+            </a>
+            <a href="#" class="btn">
+                <i class="fab fa-instagram fa-2x text-primary m-2"></i>
+            </a>
+            <a href="#" class="btn">
+                <i class="fab fa-google-plus fa-2x text-primary m-2"></i>
+            </a>
         </div>
     </footer>
     <!-- jquery -->
