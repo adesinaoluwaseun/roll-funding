@@ -96,16 +96,99 @@ input{
 }
  
 
+/* services page */
+#goal{
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+}
+/* popup container */
+.popup, .popup1{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(163, 194, 219);
+}
+/* pop  up appears */
+.popup .popuptext,
+.popup1 .popuptext1{
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0; 
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+/* popup arrow */
+.popup .popuptext::after,
+.popup1 .popuptext1::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* hide and show popup */
+.popup .show,
+.popup1 .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+    form{opacity: 0;}
+    to {opacity: 1;}
+}
+
+ #icon1{
+    size: 20rem;
+    /* background: red; */
+    max-width: 50px;
+}
+.accord{
+    background-color: rgba(253, 253, 253, 0.856);
+    margin: 0;
+}
+.accord-title{
+    font-size: 23px;
+}
+#first-icon{
+    margin-bottom: 20px;
+    margin-right: auto;
+    background-color: rgb(143, 167, 170);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
 .float-left{
  margin-top: 20px; 
+
  }   
 
 
-  #footer {
+  /* #footer {
     width:100%;
     height:100px;
     position: absolute;;
     bottom:0;
     left:0;
     color: #333;
-}
+} */
